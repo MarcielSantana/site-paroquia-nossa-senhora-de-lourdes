@@ -1,0 +1,236 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f3b6f;
+  width: 100%;
+}
+
+header img{
+  height: 150px;
+  width: 190px;
+}
+
+h1 {
+  color: #1f3b6f;
+  margin-bottom: 0.5rem;
+  justify-content: right;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2px; /* Espaçamento entre os itens do menu */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #d4a437;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4a437;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  color: #d4a437;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #1f3b6f;
+  font-size: 15px;
+}
+
+.menu > li {
+  position: relative;
+}
+
+/* SECTION PAROQUIA */
+
+.menu > li > a,
+.dropbtnParoquia {
+  display: inline-block;
+  color: #d4a437;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #1f3b6f;
+}
+
+.menu > li > a:hover,
+.dropbtnParoquia:hover {
+  background-color: #2d4f8f;
+}
+
+/* Submenu oculto por padrão */
+.dropdown-content-Paroquia {
+  display: none;
+  position: absolute;
+  top: 100%; /* abaixo do item principal */
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Estilo dos links do submenu */
+.dropdown-content-Paroquia a {
+  color: #1f3b6f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-Paroquia a:hover {
+  background-color: #dbe3f1;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.dropdownParoquia:hover .dropdown-content-Paroquia {
+  display: block;
+}
+
+/* ATÉ AQUI SECTION PAROQUIA */
+
+
+
+
+
+.menu > li > a,
+.dropbtnSacramentos {
+  display: inline-block;
+  color: #d4a437;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #1f3b6f;
+}
+
+.menu > li > a:hover,
+.dropbtnSacramentos:hover {
+  background-color: #2d4f8f;
+}
+
+/* Submenu oculto por padrão */
+.dropdown-content-Sacramentos {
+  display: none;
+  position: absolute;
+  top: 100%; /* abaixo do item principal */
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Estilo dos links do submenu */
+.dropdown-content-Sacramentos a {
+  color: #1f3b6f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-Sacramentos a:hover {
+  background-color: #dbe3f1;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.dropdownSacramentos:hover .dropdown-content-Sacramentos {
+  display: block;
+}
+
+.tituloComImagemFundo {
+  background-image: url('/img/sacramento2.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  border-radius: 12px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+
+.conteudoSacramento {
+  background-color: #fffdfa;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.conteudoSacramento h1 {
+  font-size: 2.4em;
+  color: #1f3b6f;
+  border-bottom: 2px solid #d4a437;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.conteudoSacramento h3 {
+  color: #1f3b6f;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.conteudoSacramento h5 {
+  font-size: 1.2em;
+  color: #d4a437;
+  margin-top: 30px;
+}
+
+.conteudoSacramento p {
+  margin: 12px 0;
+  font-size: 1.05em;
+}
+
+.conteudoSacramento ul {
+  margin: 10px 0 20px 30px;
+  padding: 0;
+}
+
+.conteudoSacramento ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.conteudoSacramento strong {
+  color: #1f3b6f;
+}
+
+.conteudoSacramento em {
+  font-style: italic;
+}
+
+.conteudoSacramento .citacaoPapa {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #b3d1f0;
+  border-left: 4px solid #d4a437;
+  border-radius: 8px;
+  font-style: italic;
+  color: #444;
+}
+
+#listaSacramentos a{
+  text-decoration: none;
+}

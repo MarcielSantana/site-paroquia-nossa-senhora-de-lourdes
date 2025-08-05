@@ -12,7 +12,7 @@ Este projeto foi desenvolvido como uma iniciativa de impacto social com o objeti
 ## ✨ Funcionalidades (versão 1)
 - Página inicial com destaques
 - Informações sobre a paróquia e horários de missa
-- Seção de eventos e avisos
+- Seção de Sacramentos
 - Detalhes sobre pastorais e serviços
 - Formulário de contato
 - Design responsivo

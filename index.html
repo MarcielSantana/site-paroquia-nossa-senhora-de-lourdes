@@ -3,34 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="/img/LogotipoParóquiaLourdes.png"/>
   <title>Paróquia Nossa Senhora de Lourdes</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contato.css">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
   <header>
-    <h1>Paróquia Nossa Senhora de Lourdes</h1>
+    <img src="/img/LogotipoParóquiaLourdes.png" alt="">
+    <h1 style="color: white;">Paróquia Nossa Senhora de Lourdes Vespasiano-MG</h1>
+
+    
+
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="pastorais.html">Pastorais</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdownParoquia">
+          <a href="#" class="dropbtnParoquia">Paróquia<i class='fas fa-angle-down'></i></a>
+          <div class="dropdown-content-Paroquia">
+            <a href="/attachments/clero.html">Padres e Diáconos</a>
+            <a href="/pages/sobre.html">Matriz</a>
+            <a href="/attachments/comunidades.html">Comunidades</a>
+          </div>
+        </li>
+
+        <li class="dropdownSacramentos">
+          <a href="#" class="dropbtnSacramentos">Sacramentos<i class='fas fa-angle-down'></i></a>
+          <div class="dropdown-content-Sacramentos">
+            <a href="/assets/Sacramentos/batismo.html">Batismo</a>
+            <a href="/assets/Sacramentos/eucaristia.html">Eucaristia</a>
+            <a href="/assets/Sacramentos/reconciliacao.html">Reconciliação</a>
+            <a href="/assets/Sacramentos/crisma.html">Crisma</a>
+            <a href="/assets/Sacramentos/matrimonio.html">Matrimônio</a>
+            <a href="/assets/Sacramentos/uncaoDosEnfermos.html">Unção dos Enfermos</a>
+            <a href="/assets/Sacramentos/ordem.html">Ordem</a>
+          </div>
+        </li>
+
+        <li><a href="/pages/pastorais.html">Pastorais</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
-
+  
+  
+  
   <main>
-    <section>
-      <h2>Bem-vindo à nossa paróquia!</h2>
-      <p>Localizada em Vespasiano/MG, nossa paróquia acolhe fiéis com fé, esperança e amor.</p>
+    <div class="containerImagem">
+      <img id="imagemMatriz" src="img/matriz.jpg" alt="">
+      <section class="textoSobreImagem">
+        <h2>Sejam bem-vindos ao site </h2>
+        <h1>Paróquia Nossa Senhora de Lourdes</h1>
+        <p>É com muita alegria que a nós disponibilizamos esse site. 
+          Esperamos que ele possa levar informações e fornecer ferramentas indispensáveis para a evangelização de todos os que o visitarem.</p>
+        <p>Localizada em Vespasiano/MG, nossa paróquia os acolhe com fé, esperança e amor.</p>
+      </section>
+    </div>
+
+    <section style="background: #0B2545;">
+    <div id="botoesTelaIinicial">
+          <div class="botoes">
+            <i class='fas fa-cross' style='font-size:24px' width="40px"></i>
+            <a href="#blocoDireita">MISSAS</a>
+            <p>Horários</p>
+          </div>
+          
+          <div class="botoes">
+            <i class='fas fa-dove' style='font-size:24px' width="40px"></i>
+           <a href="#linkSacramentos">SACRAMENTOS</a>
+            <p>Saiba como receber a graça</p>
+          </div>
+          
+          <div class="botoes">
+            <i class='fas fa-users' style='font-size:24px' width="40px"></i>
+            <a href="#sectionPastoraisGruposMovimentos">PASTORAIS</a>
+            <p>Faça parte da nossa familia!</p>
+          </div>
+          
+          <div class="botoes">
+            <i class='fas fa-church' style='font-size:24px'></i>
+            <a href="#sectionDizimo">DIZIMO</a>
+            <p>Generosidade e Serviço</p>
+          </div>
+    </div>
+
+      <div id="santissimoEhorarioMissa">
+        <div id="imagemSantissimo">
+          <img src="img/santissimo.jpeg" alt="" width="500px">
+        </div>
+
+        <div id="blocoDireita">
+          <div id="horarioMissasMatriz">
+            <div class="tituloMissas">
+              <h1>MISSAS</h1>
+              <h3>MATRIZ</h3>
+            </div>
+
+            <div class="linhaMissas">
+              <div class="diasSemanaMissas">
+                <h5>Terças</h5><p>19h</p>
+              </div>
+              <div class="diasSemanaMissas">
+                <h5>Quartas</h5><p>19h</p>
+              </div>
+              <div class="diasSemanaMissas">
+                <h5>Sextas</h5><p>19h</p>
+              </div>
+              <div class="diasSemanaMissas">
+                <h5>Sábados</h5><p>19h</p>
+              </div>
+              <div class="diasSemanaMissas">
+                <h5>Domingos</h5><p>07:30, 09:00 e 19h</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="capelasAdoracaoConfissoes">
+            <div class="informacoes">
+              <h3>CAPELAS</h3>
+              <p><a href="/attachments/comunidades.html">Clique aqui</a> e veja os horários de todas as comunidades</p>
+            </div>
+
+            <div class="linhaComIcone">
+              <i class="fas fa-church"></i>
+            </div>
+
+            <div class="informacoes">
+              <h3>Adoração ao Santíssimo Sacramento</h3>
+              <p>Quintas às 15 horas</p>
+            </div>
+
+            <div class="linhaComIcone">
+              <i class="fas fa-church"></i>
+            </div>
+
+            <div class="informacoes">
+              <h3>Confissões</h3>
+              <p>Sextas, das 15h às 18h, na Secretaria Paroquial, por agendamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="sectionSacramentos">
+      <div id="tituloSacramentos">
+        <h1 id="linkSacramentos">Sacramentos</h1>
+
+        <h3>Os Sacramentos revelam em nós a comunhão com Deus por meio de Jesus Cristo e pela ação do Espírito Santo, bem como nossa relação íntima com a Igreja por meio da doutrina dos apóstolos.</h3>
+      </div>
+
+      <div id="quatroSacramentos">
+
+        <div class="iconesSacramentos">
+          <h4>Batismo</h4>
+          <img src="/img/batismo.jpeg" alt="" width="200px">
+          <p>O batismo é o primeiro sacramento e ele insere o fiel na vida cristã, pois mostra o desejo de alcançar a salvação.</p>
+        </div>
+        <div class="iconesSacramentos">
+          <h4>Reconciliação</h4>
+          <img src="/img/reconcialiacao.jpeg" alt="" width="200px">
+          <p>É pela confissão individual e pela absolvição que o fiel, consciente de pecado grave, reconcilia-se com Deus e com a Igreja.</p>
+        </div>
+        <div class="iconesSacramentos">
+          <h4>Eucaristia</h4>
+          <img src="/img/eucaristia.jpeg" alt="" width="200px">
+          <p>Cristo presente sob as espécies do pão e do vinho, pelo ministério do sacerdote, oferece-se a Deus Pai e se dá como alimento espiritual aos fiéis.</p>
+        </div>
+        <div class="iconesSacramentos">
+          <h4>Matrimônio</h4>
+          <img src="/img/matrimonio.jpeg" alt="" width="200px">
+          <p>Através do matrimônio, o homem e a mulher batizados se entregam e se recebem mutuamente, pelo bem do casal e educação dos filhos.</p>
+        </div>
+      </div>
+
+      <div>
+        <p>Saiba mais sobre esses e outros sacramentos, <a href="/pages/sacramentos.html">clicando aqui</a></p>
+      </div>
+    </section>
+
+    <div class="linhaComIcone">
+    <i class="fas fa-church"></i>
+    </div>
+
+    <section id="sectionParoco">
+      <h1>Comunidade Eclesial</h1>
+      <h3>Conheça nossa Comunidade de sacerdotes e diáconos permanentes</h3>
+      <div  class="containerParoco">
+        <div id="imagemParoco">
+          <img src="/img/padreLauro.jpg" alt="" width="500px">
+        </div>
+        <div id="historiaParoco">
+          <h3>Pároco</h3>
+          <h4>Padre Lauro</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Deserunt molestiae commodi quasi, debitis magni ipsam quidem dignissimos explicabo repudiandae dolore facilis necessitatibus excepturi officiis? Dolorem consequuntur autem sunt aspernatur non. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium unde itaque ex! Temporibus commodi at officiis, minima perspiciatis eius aut quisquam facere. 
+            Minus rem quisquam saepe alias cumque vel sapiente!
+          </p>
+          <div class="conhecaMaisClero">
+            <p>Conheça nossa comunidade(padres e diáconos)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="linhaComIcone">
+    <i class="fas fa-church"></i>
+    </div>
+
+    <section id="sectionPastoraisGruposMovimentos">
+      <h2>Pastorais, Grupos e Movimentos</h2>
+        <div id="divPastoraisGruposMovimentos">
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>Catequese</h5>
+            <p>Tem como missão iniciar crianças, adolescentes, especiais, jovens e adultos na fé cristã, através da formação cristã à luz dos Evangelhos, da celebração litúrgica e da vivência comunitária.</p>
+          </div>
+          
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>Batismo</h5>
+            <p>O principal objetivo da Pastoral do Batismo é levar aos pais e padrinhos, o conhecimento do que é o Batismo e o compromisso que através dele se assume com Deus e com a comunidade.</p>
+          </div>
+          
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>Liturgia</h5>
+            <p>Serviço para animar a vida litúrgica da comunidade, tendo em vista a participação ativa, consciente e plena de todos na celebração, para dela colherem frutos espirituais.</p>
+          </div>
+          
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>Grupos de Oração</h5>
+            <p>Encontro pessoal com Jesus, a partir do Batismo no Espírito Santo, experiência profunda com o amor de Deus derramado no coração humano pelo mesmo Espírito.</p>
+          </div>
+          
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>Terço dos Homens</h5>
+            <p>Movimento com a missão de capacitar um exército paterno para promover atividade apostólica e se colocar em batalha espiritual para salvação e restauração das famílias.</p>
+          </div>
+
+          <div class="iconesPastoraisGruposMOvimentos">
+            <h5>... e tem muito mais!</h5>
+            <p>Nossa comunidade dispõe de mais de 25 grupos, entre Pastorais e Movimentos, que se organizam no trabalho de evangelização, acolhida e oração.</p>
+            
+            <div style="background: #BCA644; color: white;">
+              <p><a href="/pages/pastorais.html">Conheça todas</a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div class="linhaComIcone">
+      <i class="fas fa-church"></i>
+    </div>
+
+    <section id="sectionDizimo">
+      <!-- Bloco da Imagem e do Texto do Dízimo -->
+      <div class="dizimoConteudo">
+        <div id="imagemDizimo">
+          <img src="img/dizimo1.jpeg" alt="Imagem ilustrativa do dízimo" />
+        </div>
+
+        <div id="textoDizimo">
+          <h3>Dízimo</h3>
+          <h5>Compromisso, Gratidão e Partilha</h5>
+          <p>“Cada um dê conforme o seu coração, não com pesar ou obrigação, pois Deus ama quem dá com alegria.”</p>
+          <p>Você pode colaborar na construção de uma comunidade mais atenta às necessidades materiais e espirituais do nosso povo.</p>
+          <p>Procure um dos nossos agentes da Pastoral no balcão do dizimista ao final de cada missa dominical ou faça diretamente sua doação através dos canais abaixo.</p>
+        </div>
+      </div>
+
+      <!-- Bloco do PIX -->
+      <div id="infoPix">
+        <h1>Faça sua doação e nos ajude na evangelização!</h1>
+        <p>Paróquia Nossa Senhora de Lourdes</p>
+        <h2>PIX - Chave CNPJ: 00.000.000/0000-00</h2>
+        <div class="containerDoacao">
+          <div class="imagensPix">QR Code
+            <img src="img/qrcode.png" alt="QR Code do Pix"/>
+          </div>
+          <div id="contaItau">
+            <img src="img/itau.png" alt="Informações bancárias" />
+            <p>Transferência Bancária:</p>
+            <p>Agência: 0238</p>
+            <p>Conta Corrente: 58914-9</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 - Paróquia Nossa Senhora de Lourdes</p>
-  </footer>
+  <div class="linhaComIcone">
+    <i class="fas fa-church"></i>
+  </div>
 
-  <script src="js/script.js"></script>
+  <div id="sectionComunicacao">
+    <div id="telaYoutube">
+      <h2>Assista a Missa Dominical, todo Domingo às 19 horas, pelo Youtube </h2>
+      
+      <iframe width="400px"   height="315px" src="https://www.youtube.com/embed/UCQP2VkwS2adwzNlM3scKnSA" frameborder="1" allowfullscreen></iframe>
+    </div>
+    
+    <div id="redesSociaisParoquia">
+      <h2>Nossas Redes Sociais</h2>
+      
+      <a href="https://www.youtube.com/c/Par%C3%B3quiaNossaSenhoradeLourdesVespasiano" target="_blank"><button id="botaoYoutube">Youtube <i class='fab fa-youtube-square'></i></button></a>
+      
+      <a href="https://www.facebook.com/paroquianslourdesvespasiano" target="_blank"><button id="botaoFacebook">Facebook <i class='fab fa-facebook-square'></i></button></a>
+      
+      <a href="https://www.instagram.com/nslourdesvespasiano/" target="_blank"><button id="botaoInstagram">Instagram <i class='fab fa-instagram'></i></button></a>
+    </div>
+  </div>
+   
+
+  <section id="sectionInfoFooter">
+        <div id="footerSecretaria">
+          <h3>Secretaria</h3>
+          <span><p>Horário de Funcionamento:</p></span>
+          <p style="color: #1CCCFF;">Segunda a Sexta</p>
+          <p>12h às 18h</p>
+          
+          <p style="color: #1CCCFF;">Sàbado</p>
+          <p>8h às 12h</p>
+          
+          <p style="color: #1CCCFF;">horário de almoço</p>
+          <p>12h às 13h</p>
+        </div>
+      
+      <div id="footerContatos">
+        <h3>Contatos</h3>
+        
+        <ul>
+          <li><i class='fas fa-phone'></i> Telefone: (31)3621-1583</li>
+          <li><i class='fas fa-at'></i> Email:</li>
+          <li><i class='fab fa-whatsapp' style="color: green;"></i> WhatsApp: (31) 98788-4823</li>
+          <li><i class='fas fa-map-marker-alt'></i> Endereço: Rua Professora Julia Chalita, 64, Centro, Vespasiano-MG</li>
+        </ul>
+      </div>
+      
+      <div id="footerLinksUteis">
+        <h3>Links úteis</h3>
+        <ul>
+          <li><a href="https://arquidiocesebh.org.br/" target="_blank">Arquidiocese de Belo Horizonte</a></li>
+          
+          <li><a href="https://www.cnbb.org.br/" target="_blank">CNBB - Conferência Nacional dos Bispos do Brasil</a></li>
+          
+          <li><a href="https://www.vaticannews.va/pt.html" target="_blank">Noticias do Vaticano</a></li>
+        </ul>
+      </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 - Paróquia Nossa Senhora de Lourdes - Criado por: Marciel Santana</p>
+  </footer>
 </body>
 </html>

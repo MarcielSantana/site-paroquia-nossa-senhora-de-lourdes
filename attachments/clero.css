@@ -1,0 +1,303 @@
+body{
+  background-color: #D5EAFF6B;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f3b6f;
+  width: 100%;
+}
+
+header img{
+  height: 150px;
+  width: 190px;
+}
+
+h1 {
+  color: #1f3b6f;
+  margin-bottom: 0.5rem;
+  justify-content: right;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2px; /* Espaçamento entre os itens do menu */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #d4a437;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4a437;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  color: #d4a437;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #1f3b6f;
+  font-size: 15px;
+}
+
+.menu > li {
+  position: relative;
+}
+
+/* SECTION PAROQUIA */
+
+.menu > li > a,
+.dropbtnParoquia {
+  display: inline-block;
+  color: #d4a437;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #1f3b6f;
+}
+
+.menu > li > a:hover,
+.dropbtnParoquia:hover {
+  background-color: #2d4f8f;
+}
+
+/* Submenu oculto por padrão */
+.dropdown-content-Paroquia {
+  display: none;
+  position: absolute;
+  top: 100%; /* abaixo do item principal */
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Estilo dos links do submenu */
+.dropdown-content-Paroquia a {
+  color: #1f3b6f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-Paroquia a:hover {
+  background-color: #dbe3f1;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.dropdownParoquia:hover .dropdown-content-Paroquia {
+  display: block;
+}
+
+/* ATÉ AQUI SECTION PAROQUIA */
+
+
+.menu > li > a,
+.dropbtnSacramentos {
+  display: inline-block;
+  color: #d4a437;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #1f3b6f;
+}
+
+.menu > li > a:hover,
+.dropbtnSacramentos:hover {
+  background-color: #2d4f8f;
+}
+
+/* Submenu oculto por padrão */
+.dropdown-content-Sacramentos {
+  display: none;
+  position: absolute;
+  top: 100%; /* abaixo do item principal */
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Estilo dos links do submenu */
+.dropdown-content-Sacramentos a {
+  color: #1f3b6f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-Sacramentos a:hover {
+  background-color: #dbe3f1;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.dropdownSacramentos:hover .dropdown-content-Sacramentos {
+  display: block;
+}
+
+/* SECÃO PÁROCO */
+
+.containerParoco{
+  display: flex;
+  gap: 20px; /* Espaço entre imagem e texto */
+  align-items: flex-start; /* Alinha pelo topo */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+main h1{
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#subtitulo{
+  text-align: center;
+}
+
+#imagemParoco img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 1;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#historiaParoco{
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: #FFFFFF;
+  background-color: #A112A200;
+  color: #13315C;
+  text-align: right;
+}
+
+#historiaParoco h3{
+  color: #1282A2;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: right;
+}
+
+#historiaParoco h4{
+  color: #BCA644;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* CONTEINER DIÁCONOS */
+
+.containerDiaconos {
+  display: flex;
+  justify-content: space-around; /* Ou use space-between */
+  flex-wrap: wrap; /* Se quiser que se ajustem em telas pequenas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.diaconoBox {
+  text-align: center;
+  max-width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* PADRE COLABORADORES */
+
+#padresColaboradores {
+  
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.containerPadres {
+  display: flex;
+  flex-wrap: nowrap; /* impede que quebre a linha */
+  overflow-x: auto;  /* cria scroll se faltar espaço */
+  gap: 20px;
+  width: 100%;
+}
+
+.padreColaborador{
+  min-width: 300px; 
+  text-align: center;
+  width: 25%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padreColaborador h4{
+  color: #BCA644;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.padreColaborador img{
+  min-width: 300px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  height: auto;
+  max-width: 100%;
+
+}
+
+.citacao {
+  text-align: center;
+  background-color: #d4e6f7;
+  border-left: 5px solid #0d4d8b;
+  padding: 20px;
+  margin-top: 40px;
+  font-style: italic;
+  color: #444;
+  border-radius: 8px;
+}
+
+.referencia {
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 10px;
+  font-style: normal;
+  color: #0d4d8b;
+}
+
+/* Linha horizontal com icone da igreja */
+.linhaComIcone {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .linhaComIcone::before,
+    .linhaComIcone::after {
+      content: '';
+      flex: 1;
+      border-bottom: 5px solid #BCA644;
+    }
+
+    .linhaComIcone i {
+      padding: 0 15px;
+      color: #BCA644; /* cor do ícone */
+      font-size: 24px;
+    }
+
