@@ -1,13 +1,12 @@
 # Site da Paróquia Nossa Senhora de Lourdes - Vespasiano/MG
 
-Este projeto foi desenvolvido como uma iniciativa de impacto social com o objetivo de oferecer à Paróquia um site informativo, leve e acessível para a comunidade local.
+Este projeto está sendo desenvolvido como uma iniciativa de impacto social com o objetivo de oferecer à Paróquia um site informativo, leve e acessível para a comunidade local.
 
 ## 🔧 Tecnologias utilizadas
 - HTML5
 - CSS3
-- JavaScript
 - Git e GitHub
-- (Futuramente) JSON ou LocalStorage para gerenciamento de eventos
+- (Futuramente) JavaScript, JSON ou LocalStorage para gerenciamento de eventos
 
 ## ✨ Funcionalidades (versão 1)
 - Página inicial com destaques
@@ -18,7 +17,9 @@ Este projeto foi desenvolvido como uma iniciativa de impacto social com o objeti
 - Design responsivo
 
 ## 📌 Em construção
-O site será atualizado ao longo do segundo semestre de 2025.
+O site será atualizado ao longo do segundo semestre de 2026.
+
+OBS: Aguardando reunião com o padre para ele ver o site e fazer suas pontuações...
 
 ## 🙏 Autor
 Marciel Santana – Educador e Desenvolvedor Web em formação
